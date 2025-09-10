@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tushar\\RiderProjects\\NewsPortal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{438C464D-CD72-4063-A590-E3C104364C74}|NewsPortal.Web\\NewsPortal.Web.csproj|c:\\users\\tushar\\riderprojects\\newsportal\\newsportal.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{438C464D-CD72-4063-A590-E3C104364C74}|NewsPortal.Web\\NewsPortal.Web.csproj|solutionrelative:newsportal.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tushar\\RiderProjects\\NewsPortal\\NewsPortal.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "NewsPortal.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\tushar\\RiderProjects\\NewsPortal\\NewsPortal.Web\\appsettings.json",
+              "RelativeToolTip": "NewsPortal.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAADiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-10T13:31:56.508Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

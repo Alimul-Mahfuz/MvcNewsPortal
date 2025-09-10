@@ -1,0 +1,11 @@
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\bin\Debug\net9.0\NewsPortal.Domain.deps.json
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\bin\Debug\net9.0\NewsPortal.Domain.dll
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\bin\Debug\net9.0\NewsPortal.Domain.pdb
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.AssemblyInfoInputs.cache
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.AssemblyInfo.cs
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.dll
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\refint\NewsPortal.Domain.dll
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.pdb
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\ref\NewsPortal.Domain.dll
