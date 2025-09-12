@@ -7,7 +7,7 @@ public class UserSeeder
 {
     public static void SeedUsers(ApplicationDbContext db)
     {
-        if (db.Users.Any()) return; // Already seeded
+        if (db.Users.Any()) return; 
 
         db.Users.AddRange(
             new User

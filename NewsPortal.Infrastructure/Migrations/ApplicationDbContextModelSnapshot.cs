@@ -30,9 +30,8 @@ namespace NewsPortal.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AuthorId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
@@ -66,17 +65,14 @@ namespace NewsPortal.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ViewCount")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("AuthorId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Articles");
                 });
@@ -222,15 +218,19 @@ namespace NewsPortal.Infrastructure.Migrations
 
             modelBuilder.Entity("NewsPortal.Domain.Entities.Article", b =>
                 {
+                    b.HasOne("NewsPortal.Domain.Entities.User", "Author")
+                        .WithMany("Articles")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("NewsPortal.Domain.Entities.Category", "Category")
                         .WithMany("Articles")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("NewsPortal.Domain.Entities.User", null)
-                        .WithMany("Articles")
-                        .HasForeignKey("UserId");
+                    b.Navigation("Author");
 
                     b.Navigation("Category");
                 });

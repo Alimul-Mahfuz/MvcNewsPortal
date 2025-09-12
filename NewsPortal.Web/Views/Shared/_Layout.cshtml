@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NewsPortal.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
                             if (Context.Session.GetString("UserRole")=="Admin" || Context.Session.GetString("UserRole")=="Editor")
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Create</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Article" asp-action="Index">Article</a>
                                 </li>
                             }
                             

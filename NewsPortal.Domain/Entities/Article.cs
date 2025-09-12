@@ -12,7 +12,7 @@ public class Article
     public int CategoryId { get; set; }
     public Category Category { get; set; }
 
-    public string AuthorId { get; set; } 
+    public int AuthorId { get; set; } 
 
     public bool IsPublished { get; set; } = false;
     public int ViewCount { get; set; } = 0;
@@ -21,4 +21,5 @@ public class Article
 
     public ICollection<ArticleTag> ArticleTags { get; set; } = new List<ArticleTag>();
     public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+    public User Author { get; set; }
 }

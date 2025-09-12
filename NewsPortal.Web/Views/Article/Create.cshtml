@@ -1,0 +1,43 @@
+﻿@model NewsPortal.Web.ViewModels.ArticleViewModel
+@{
+    ViewData["Title"] = "Create Article";
+}
+
+<div class="row">
+    <h1>Create Article</h1>
+    <div class="col-12">
+        <form method="post" enctype="multipart/form-data" asp-action="Store" asp-controller="Article">
+            <div class="form-group mb-3">
+                <label asp-for="Title">Title</label>
+                <input type="text" class="form-control" asp-for="Title"  placeholder="Enter title">
+                <span asp-validation-for="Title" class="text-bg-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Summery">Summery</label>
+                <input type="text" class="form-control" asp-for="Summery" placeholder="Enter title">
+                <span asp-validation-for="Summery" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Content">Content</label>
+                <textarea class="form-control" asp-for="Content" rows="3"></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CoverImage"></label>
+                <input type="file" asp-for="CoverImage" class="form-control-file">
+                <span asp-validation-for="CoverImage" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CategoryId"></label>
+                <select class="form-control" asp-for="CategoryId" asp-items="@(new MultiSelectList(Model.Categories,"Id","Name"))"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="SelectedTags"></label>
+                <select class="form-control" asp-for="SelectedTags" asp-items="@(new MultiSelectList(Model.Tags,"Id","Name"))" multiple></select>
+                <span asp-validation-for="SelectedTags" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

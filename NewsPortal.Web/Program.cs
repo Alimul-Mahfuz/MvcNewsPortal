@@ -1,7 +1,12 @@
+using Microsoft.AspNetCore.WebSockets;
 using Microsoft.EntityFrameworkCore;
+using NewsPortal.Application.Interfaces;
 using NewsPortal.Application.Services;
 using NewsPortal.Infrastructure.Data;
+using NewsPortal.Infrastructure.Interfaces;
+using NewsPortal.Infrastructure.Repositories;
 using NewsPortal.Infrastructure.Seeder;
+using NewsPortal.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +18,19 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+
+builder.Services.AddScoped<ITagRepository, TagRepositoryImpl>();
+builder.Services.AddScoped<TagService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryImpl>();
+builder.Services.AddScoped<CategoryService>();
+builder.Services.AddScoped<IFileService, FileServiceImpl>();
+builder.Services.AddScoped<ArticleService>();
+builder.Services.AddScoped<IUserRepository,UserRepositoryImpl>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddScoped<ICurrentUser, CurrentUserService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -36,6 +54,8 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     db.Database.Migrate();
     UserSeeder.SeedUsers(db);
+    TagSeeder.SeedTags(db);
+    CategorySeeder.SeedCategories(db);
 }
 
 
@@ -48,8 +68,8 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

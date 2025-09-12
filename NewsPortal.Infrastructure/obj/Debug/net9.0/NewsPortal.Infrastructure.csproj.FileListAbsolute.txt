@@ -15,3 +15,4 @@ C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Infrastructure\obj\Debug\net
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Infrastructure\obj\Debug\net9.0\ref\NewsPortal.Infrastructure.dll
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Infrastructure\bin\Debug\net9.0\NewsPortal.Infrastructure.runtimeconfig.json
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Infrastructure\obj\Debug\net9.0\NewsPortal.Infrastructure.genruntimeconfig.cache
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Infrastructure\obj\Debug\net9.0\NewsPortal.Infrastructure.sourcelink.json

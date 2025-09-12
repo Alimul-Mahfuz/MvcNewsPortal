@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Article Page";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="row my-3">
+    <div class="col-12 mb-3">
+        <a asp-action="Create" asp-controller="Article" class="btn btn-sm btn-primary">
+            <i class="bi bi-plus"></i> Add Article
+        </a>
+    </div>
+
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Current Article Listing</h5>
+            </div>
+            <div class="card-body">
+                <table id="articlesTable" class="table table-bordered table-striped table-hover w-100">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Tags</th>
+                            <th>Published</th>
+                            <th>Created At</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <!-- DataTables CSS -->
+    <script>
+        $(document).ready(function () {
+            $('#articlesTable').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    url: '/Article/DataServer',
+                    type: 'GET',
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    }
+                },
+                columns: [
+                    { data: 'title' },
+                    { data: 'category.name' },
+                    {
+                        data:"tags"
+                    },
+                    {
+                        data: 'isPublished',
+                        render: function (data) {
+                            return data ? '<span class="badge bg-success">Yes</span>' : '<span class="badge bg-secondary">No</span>';
+                        }
+                    },
+      
+                    {
+                        data: 'createdAt',
+                        render: function (data) {
+                            return new Date(data).toLocaleString();
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+}

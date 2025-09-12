@@ -15,3 +15,4 @@ C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Application\obj\Debug\net9.0
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Application\obj\Debug\net9.0\refint\NewsPortal.Application.dll
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Application\obj\Debug\net9.0\NewsPortal.Application.pdb
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Application\obj\Debug\net9.0\ref\NewsPortal.Application.dll
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Application\obj\Debug\net9.0\NewsPortal.Application.sourcelink.json

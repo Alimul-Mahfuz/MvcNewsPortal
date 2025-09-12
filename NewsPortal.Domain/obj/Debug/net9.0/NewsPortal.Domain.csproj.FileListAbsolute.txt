@@ -9,3 +9,4 @@ C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\News
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\refint\NewsPortal.Domain.dll
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.pdb
 C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\ref\NewsPortal.Domain.dll
+C:\Users\tushar\RiderProjects\NewsPortal\NewsPortal.Domain\obj\Debug\net9.0\NewsPortal.Domain.sourcelink.json
