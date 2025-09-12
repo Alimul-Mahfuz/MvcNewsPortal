@@ -18,6 +18,12 @@ public class AuthController:Controller
         return View();
     }
 
+    [HttpGet]
+    public IActionResult Login()
+    {
+        return View();   
+    }
+
     [HttpPost]
     public async Task<IActionResult> AdminLogin(AdminLoginViewModel model)
     {

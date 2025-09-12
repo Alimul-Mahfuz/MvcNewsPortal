@@ -9,112 +9,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6eb0fa72-d83d-4e89-b53f-f3fa8d398c2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/DTOs/AppFile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/DTOs/CreateArticleDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Interfaces/FileServiceImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Interfaces/ICurrentUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Interfaces/IFileService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Services/ArticleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Services/CategoryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Services/TagService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Application/Services/UserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Interfaces/ICategoryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Interfaces/ITagRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Interfaces/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Repositories/CategoryRepositoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Repositories/TagRepositoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Repositories/UserRepositoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Seeder/CategorySeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Seeder/TagSeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Controllers/ArticleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Services/CurrentUserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/ViewModels/ArticleViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Views/Article/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Views/Article/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Filters/SessionAuthorizedAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/ViewComponents/CategoryDropdownViewComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/ViewModels/LoginViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Views/Auth/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPortal.Web/Views/Shared/Components/CategoryDropdown/Default.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewsPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewsPortal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/NewsPortal.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/NewsPortal.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/bin/Debug/net9.0/NewsPortal.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/NewsPortal.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/ref/NewsPortal.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/ref/NewsPortal.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/refint/NewsPortal.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/Debug/net9.0/refint/NewsPortal.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/Entities/Article.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/Entities/Article.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/Entities/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/bin/Debug/net9.0/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/bin/Debug/net9.0/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/bin/Debug/net9.0/NewsPortal.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/bin/Debug/net9.0/NewsPortal.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/NewsPortal.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/ref/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/ref/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/refint/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/Debug/net9.0/refint/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/Migrations/20250910133906_InitialCreate.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/Migrations/20250910133906_InitialCreate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/Migrations/20250910134638_AddUserRole.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/Migrations/20250910134638_AddUserRole.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/Seeder/UserSeeder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/Seeder/UserSeeder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/bin/Debug/net9.0/NewsPortal.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/NewsPortal.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/ref/NewsPortal.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/ref/NewsPortal.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/refint/NewsPortal.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/Debug/net9.0/refint/NewsPortal.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/NewsPortal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/NewsPortal.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/Controllers/ArticleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/Controllers/ArticleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/Controllers/DashboardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/Controllers/DashboardController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.staticwebassets.endpoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/bin/Debug/net9.0/NewsPortal.Web.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/NewsPortal.Web.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/ref/NewsPortal.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/ref/NewsPortal.Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/refint/NewsPortal.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/refint/NewsPortal.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rjimswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rjimswa.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.build.json.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPortal.Web/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.Web/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPortal.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,9 +50,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b241c378a97f4447a2e6baf64e656013e8e910/e2/09fd5ce3/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5f29cdd5ab36a19ab97f6a05926934da4eb689e22a58d283c4db23f5c4d82bd/ActionFilterAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Application/DTOs/AppFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Application/DTOs/CreateArticleDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NewsPortal.Application/DataTables/ArticleDataService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Application/Interfaces/FileServiceImpl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Application/Interfaces/ICurrentUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Application/Interfaces/IFileService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -159,12 +80,16 @@
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Controllers/ArticleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Controllers/DashboardController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Filters/SessionAuthorizedAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Services/CurrentUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NewsPortal.Web/ViewComponents/CategoryDropdownViewComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/ViewModels/AdminLoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/ViewModels/ArticleViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NewsPortal.Web/ViewModels/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Views/Article/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Views/Auth/AdminLogin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Views/Dashboard/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NewsPortal.Web/Views/Shared/Components/CategoryDropdown/Default.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
@@ -250,7 +175,7 @@
       <workItem from="1757509665322" duration="1040000" />
       <workItem from="1757511183712" duration="6855000" />
       <workItem from="1757559405756" duration="14597000" />
-      <workItem from="1757601882405" duration="10353000" />
+      <workItem from="1757601882405" duration="16873000" />
     </task>
     <servers />
   </component>

@@ -4,9 +4,9 @@ using NewsPortal.Application.DTOs;
 using NewsPortal.Application.Interfaces;
 using NewsPortal.Application.Services;
 using NewsPortal.Web.ViewModels;
-
+using NewsPortal.Web.Filters;
 namespace NewsPortal.Web.Controllers;
-
+[SessionAuthorized]
 public class ArticleController : Controller
 {
     protected readonly TagService _tagService;
@@ -23,7 +23,6 @@ public class ArticleController : Controller
         _articleService = articleService;
     }
 
-    // GET
     public IActionResult Index()
     {
         return View();

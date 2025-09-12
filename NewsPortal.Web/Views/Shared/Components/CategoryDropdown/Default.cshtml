@@ -1,0 +1,24 @@
+﻿@model IEnumerable<NewsPortal.Domain.Entities.Category>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-dark" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Categories
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var category in Model)
+            {
+                <li>
+                    <a class="dropdown-item" asp-controller="Article" asp-action="Index" asp-route-categoryId="@category.Id">
+                        @category.Name
+                    </a>
+                </li>
+            }
+        }
+        else
+        {
+            <li><span class="dropdown-item text-muted">No categories</span></li>
+        }
+    </ul>
+</li>
