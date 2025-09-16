@@ -10,7 +10,7 @@
             foreach (var category in Model)
             {
                 <li>
-                    <a class="dropdown-item" asp-controller="Article" asp-action="Index" asp-route-categoryId="@category.Id">
+                    <a class="dropdown-item" asp-controller="Articles" asp-action="Index" asp-route-categoryId="@category.Id">
                         @category.Name
                     </a>
                 </li>

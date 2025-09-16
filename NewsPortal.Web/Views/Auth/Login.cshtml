@@ -56,9 +56,9 @@
 <div class="d-flex align-items-center justify-content-center vh-100">
     <div class="col-md-6 col-lg-4">
         <div class="login-card">
-            <h3 class="text-center mb-4">Admin Login</h3>
+            <h3 class="text-center mb-4">Login</h3>
 
-            <form method="post" asp-controller="Auth" asp-action="AdminLogin">
+            <form method="post" asp-controller="Auth" asp-action="UserLogin">
                 @Html.AntiForgeryToken()
 
                 <div class="text-danger mb-3" asp-validation-summary="ModelOnly"></div>

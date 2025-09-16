@@ -23,6 +23,26 @@ public class AuthController:Controller
     {
         return View();   
     }
+    [HttpPost]
+    public async Task<IActionResult> UserLogin(LoginViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var user= await _authService.Login(model.Email,model.Password);
+            if (user != null && user.Role != UserRole.Admin)
+            {
+                HttpContext.Session.SetInt32("UserId", user.Id);
+                HttpContext.Session.SetString("UserName", user.Username);
+                HttpContext.Session.SetString("UserEmail", user.Email);
+                HttpContext.Session.SetString("UserFullName", user.FullName);
+                HttpContext.Session.SetString("UserRole", user.Role.ToString());
+                return RedirectToAction("Index", "Home");
+            }
+            ModelState.AddModelError("", "Invalid email or password");
+            
+        }
+        return View("Login");
+    }
 
     [HttpPost]
     public async Task<IActionResult> AdminLogin(AdminLoginViewModel model)

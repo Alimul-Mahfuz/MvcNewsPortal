@@ -3,20 +3,21 @@ using NewsPortal.Application.DTOs;
 using NewsPortal.Application.Interfaces;
 using NewsPortal.Domain.Entities;
 using NewsPortal.Infrastructure.Data;
+using NewsPortal.Infrastructure.Interfaces;
 
 namespace NewsPortal.Application.Services;
 
 public class ArticleService
 {
-    private readonly ApplicationDbContext _db;
-    private readonly UserService _userService;
     private readonly ICurrentUser _currentUserService;
+    private readonly IArticleRepository _articleRepository;
+    private readonly ApplicationDbContext _db;
 
-    public ArticleService(ApplicationDbContext db, UserService userService, ICurrentUser currentUser)
+    public ArticleService(ICurrentUser currentUser,IArticleRepository articleRepository,ApplicationDbContext dbContext)
     {
-        _db = db;
-        _userService = userService;
         _currentUserService = currentUser;
+        _articleRepository = articleRepository;
+        _db = dbContext;
     }
 
     public async Task<Article> CreateArticle(CreateArticleDto dto)
@@ -40,26 +41,44 @@ public class ArticleService
             CreatedAt = DateTime.UtcNow,
             AuthorId = _currentUserService.UserId ?? 1
         };
-        await _db.Articles.AddAsync(article);
-        await _db.SaveChangesAsync();
+        await this._articleRepository.AddArticleAsync(article);
         return article;
     }
 
     public async Task<IEnumerable<Article>> GetArticlesAsync()
     {
-        return await _db.Articles.ToListAsync();
+        return await _articleRepository.GetArticlesAsync();
     }
 
-    public IQueryable<Article> GetArticlesByCategory()
+    public Task<Article> GetArticleByIdAsync(int id)
     {
-        return _db.Articles
-            .Include(a => a.Category)
-            .Include(a => a.Author);
+        return _articleRepository.GetArticleByIdAsync(id);
     }
+
+
+    public IQueryable<Article> GetArticlesByCategory(int? categoryId=null)
+    {
+       
+        var query= _articleRepository.GetQueryableArticles();
+        query=query.Include(a=>a.Category)
+            .Include(a=>a.Author)
+            .Include(a=>a.ArticleTags)
+            .ThenInclude(at=>at.Tag);
+
+        if (categoryId.HasValue)
+        {
+            query=query.Where(a=>a.CategoryId==categoryId);
+        }
+        return query;
+        
+        
+    }
+
+
 
     public async Task<int> GetCount()
     {
-        return await _db.Articles.CountAsync();
+        return await _articleRepository.GetCount();
     }
 
 

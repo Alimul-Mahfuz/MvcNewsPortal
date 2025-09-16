@@ -7,14 +7,14 @@ using NewsPortal.Web.ViewModels;
 using NewsPortal.Web.Filters;
 namespace NewsPortal.Web.Controllers;
 [SessionAuthorized]
-public class ArticleController : Controller
+public class ArticlesController : Controller
 {
     protected readonly TagService _tagService;
     protected readonly CategoryService _categoryService;
     private readonly IFileService _fileService;
     protected readonly ArticleService _articleService;
 
-    public ArticleController(TagService tagService, CategoryService categoryService, IFileService fileService,
+    public ArticlesController(TagService tagService, CategoryService categoryService, IFileService fileService,
         ArticleService articleService)
     {
         _fileService = fileService;
@@ -26,6 +26,12 @@ public class ArticleController : Controller
     public IActionResult Index()
     {
         return View();
+    }
+
+    public async Task<IActionResult> ArticleView(int id)
+    {
+        var article = await _articleService.GetArticleByIdAsync(id);
+        return View(article);
     }
 
 
@@ -99,7 +105,7 @@ public async Task<IActionResult> DataServer(int? categoryId)
     int pageSize = string.IsNullOrEmpty(length) ? 10 : Convert.ToInt32(length);
     int skip = string.IsNullOrEmpty(start) ? 0 : Convert.ToInt32(start);
 
-    var query = _articleService.GetArticlesByCategory();
+    var query = _articleService.GetArticlesByCategory(categoryId);
 
     int recordsFiltered = await query.CountAsync();
     int recordsTotal = await _articleService.GetCount();

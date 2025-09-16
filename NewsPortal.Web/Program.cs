@@ -28,6 +28,7 @@ builder.Services.AddScoped<IFileService, FileServiceImpl>();
 builder.Services.AddScoped<ArticleService>();
 builder.Services.AddScoped<IUserRepository,UserRepositoryImpl>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IArticleRepository, ArticleRepositoryImpl>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.AddScoped<ICurrentUser, CurrentUserService>();

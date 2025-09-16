@@ -1,0 +1,14 @@
+﻿@model NewsPortal.Domain.Entities.Article
+@{
+    ViewData["Title"] = "Article Page";
+}
+
+
+<div class="row my-3">
+    <h1 class="mb-3">@Model.Title</h1>
+    <p>@Model.Author.FullName, Pulbished: @Model.CreatedAt.ToString("yy-MM-dd")</p>
+    <div class="mt-5">
+        <p>@Model.Content</p>
+    </div>
+    
+</div>
